@@ -31,6 +31,8 @@ header {
   background-color: #031c30;
   padding: 20px;
   box-shadow: 0 0 10px rgb(255, 255, 255);
+  background-image: none;
+
 }
 
 /* Set text color and font size for header title */
@@ -72,7 +74,6 @@ h3{
   align-self: auto;
 }
 
-/* Sensor reading styles */
 /* Auto input styles */
 .auto-input {
   display: inline-block;
