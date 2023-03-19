@@ -4,12 +4,40 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <link rel="stylesheet" href="web.css" />
     <script src="script.js"></script>
-    <title>Document</title>
+    <title>Smart Room</title>
   </head>
   <body>
-    <h1>Temperature</h1>
-    <h2 id="field-1">--</h2>
-    <h2 id="field-2">--</h2>
+    <!-- Header -->
+    <header>
+      <h1 class="auto-input"></h1>
+    </header>
+    
+    <!-- Content -->
+    <main>
+      <!-- Sensor readings -->
+      <section>
+        <h2>Sensor Ultrasonik</h2>
+        <h3>Distance (cm): <span id="distance_cm">--</span></h3>
+      </section>
+      
+      <!-- Status indicators -->
+      <section>
+        <h2>Keadaan Ruangan</h2>
+        <h3>Temperature (°C): <span id="temperature">--</span></h3>
+        <h3>Humidity (%): <span id="kelembapan">--</span></h3>
+      </section>
+    </main>
+    <script>
+      let typed = new Typed(".auto-input",{
+      strings: ["Tugas Project", "Smart Room"],
+      typeSpeed: 150,
+      backSpeed: 50,
+      loop: true
+  })
+  </script>
   </body>
 </html>

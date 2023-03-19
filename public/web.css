@@ -1,0 +1,105 @@
+/* General styles */
+
+/* Set default font family and size */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+/* Center align the main content */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px auto;
+}
+
+/* Set max width for the main content */
+@media (min-width: 768px) {
+  main {
+    max-width: 800px;
+  }
+}
+
+/* Header styles */
+
+/* Set background color and padding for header */
+header {
+  background-color: #000000;
+  padding: 20px;
+}
+
+/* Set text color and font size for header title */
+h1 {
+  color: #ffffff;
+  font-size: 36px;
+}
+
+/* Section styles */
+
+/* Set margin and padding for sections */
+section {
+  margin: 30px auto;
+  padding: 20px;
+}
+
+/* Set background color, border, and border radius for sections */
+section {
+  background-color: #000000;
+  border: 1px solid #000000;
+  border-radius: 5px;
+}
+
+/* Set margin and padding for section titles */
+h2 {
+  margin: 0;
+  padding: 10px 0;
+  text-align: center;
+}
+
+h3{
+  margin: 0;
+  border-radius: 5px;
+  font-size: 24px;
+  padding: 10px 0;
+  color: #ffffff;
+  align-self: auto;
+}
+
+/* Sensor reading styles */
+/* Auto input styles */
+.auto-input {
+  display: inline-block;
+  border-right: 0.15em solid rgb(255, 255, 255);
+  padding-right: 2px;
+  margin: 0 auto;
+  white-space: nowrap;
+  font-size: 2em;
+  animation: blink-caret 0.75s step-end infinite;
+}
+
+/* Cursor blink animation */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(255, 255, 255); }
+}
+
+/* Set margin and padding for sensor readings */
+section span {
+  margin: 0;
+  padding: 10px;
+}
+
+/* Set background color, border, border radius, and font size for sensor readings */
+section span {
+  border-radius: 5px;
+  font-size: 24px;
+}
+
+/* Set text color and padding for sensor reading titles */
+section h2 {
+  color: #ffffff;
+  align-self: auto;
+}
+
+
