@@ -1,6 +1,4 @@
-/* General styles */
-
-/* Set default font family and size */
+/* mensetting font dan ukuran bawaan */
 body {
   background-image: url("background.avif");
   background-size: cover;
@@ -8,7 +6,7 @@ body {
   font-size: 16px;
 }
 
-/* Center align the main content */
+/* untuk konten utamanya ada di tengah */
 main {
   display: flex;
   flex-direction: column;
@@ -16,55 +14,44 @@ main {
   margin: 50px auto;
 }
 
-
-/* Set max width for the main content */
+/* mensetting ukuran lebar maksimum dari konten utama */
 @media (min-width: 768px) {
   main {
     max-width: 800px;
   }
 }
 
-/* Header styles */
-
-/* Set background color and padding for header */
+/* mensetting header */
 header {
   background-color: #031c30;
   padding: 20px;
   box-shadow: 0 0 10px rgb(255, 255, 255);
-  background-image: none;
-
 }
 
-/* Set text color and font size for header title */
+/* mensetting font sama warna dari h1 */
 h1 {
   color: #ffffff;
   font-size: 36px;
 }
 
-/* Section styles */
-
-/* Set margin and padding for sections */
+/* mensetting section */
 section {
   margin: 30px auto;
   padding: 20px;
-}
-
-/* Set background color, border, and border radius for sections */
-section {
   background-color: #08243c;
   border: 1px solid #ffffff;
   border-radius: 5px;
   box-shadow: 0 0 10px rgb(255, 255, 255);
 }
 
-
-/* Set margin and padding for section titles */
+/* mensetting untuk h2 */
 h2 {
   margin: 0;
   padding: 10px 0;
   text-align: center;
 }
 
+/* mensetting untuk h3 */
 h3{
   margin: 0;
   border-radius: 5px;
@@ -74,7 +61,7 @@ h3{
   align-self: auto;
 }
 
-/* Auto input styles */
+/* animasi ketikan */
 .auto-input {
   display: inline-block;
   border-right: 0.15em solid rgb(255, 255, 255);
@@ -85,28 +72,26 @@ h3{
   animation: blink-caret 0.75s step-end infinite;
 }
 
-/* Cursor blink animation */
+/* biar ada blink blinknya */
 @keyframes blink-caret {
   from, to { border-color: transparent }
   50% { border-color: rgb(255, 255, 255); }
 }
 
-/* Set margin and padding for sensor readings */
+/* setting margin dan padding untuk sensor */
 section span {
   margin: 0;
   padding: 10px;
 }
 
-/* Set background color, border, border radius, and font size for sensor readings */
+/* setting text untuk sensor */
 section span {
   border-radius: 5px;
   font-size: 24px;
 }
 
-/* Set text color and padding for sensor reading titles */
+/* setting warna text dan auto tersusun untuk sensor */
 section h2 {
   color: #ffffff;
   align-self: auto;
 }
-
-
